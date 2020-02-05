@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: trolls_movie_font;
+	src: url(../fonts/trolls_movie_font.woff); 
+}
+
+/*CSS FOR LANDING PAGE*/
+.landing-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#main-title{
+	font-family: trolls_movie_font;
+	font-size: 9rem;
+	text-shadow: 3px 3px 1px orange;
+}
+#sub-text{
+	font-size: 3rem;
+	padding-bottom: 3rem;
+
+}
+
+#btn-init{
+	width: 20rem;
+	height: 4rem;
+	font-size: 2rem;
+}
+
+#branch{
+	width: 20%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#poppy{
+	width: 20%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+
+
+
+/*CSS FOR QUESTIONS PAGE*/
+.question-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.btn-choice{
+	width: 20rem;
+	height: 4rem;
+	font-size: 2rem !important;
+	margin: 5px;
+}
+
+
+/*CSS FOR RESULT PAGE*/
+.result-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.your {
+	position: absolute;
+	top: 50px;
+}
+
+.bluepic {
+	background: url(../images/blue.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: center;
+}
+
+.blue {
+	background-color: blue;
+}
+
+/*h1 {
+	font-family: 'Sigmar One', cursive;
+}*/
+
+.color-desc > h1, .color-desc > p {
+	color: white;
+}
+
+.redpic {
+	background: url(../images/red.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: center;
+}
+
+.red {
+	background-color: red;
+}
+
+.greenpic {
+	background: url(../images/green.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: center;
+}
+
+.green {
+	background-color: green;
+}
+
+.yellowpic {
+	background: url(../images/yellow.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: center;
+}
+
+.yellow {
+	background-color: #b4c812;
+}
+
+.orangepic {
+	background: url(../images/orange.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.orange {
+	background-color: #d16114;
+}
+
+.purplepic {
+	background: url(../images/purple.jpg);
+	height: 400px;
+	width: 350px;
+	background-size: cover;
+	background-position: center;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.color-desc {
+	height: 400px;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 30px;
+}
+/*iphone*/
+@media only screen and (min-width: 375px) and (max-width: 667px){
+
+	#main-title{
+	font-size: 3rem;
+	text-shadow: 1px 1px 1px orange;
+	
+	}
+	#sub-text{
+	font-size: 1.25rem;
+	
+
+	}
+	#branch{
+	width: 35%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	}
+
+	#poppy{
+		width: 35%;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+	}
+	#btn-init{
+	width: 15rem;
+	height: 4rem;
+	font-size: 1.5rem;
+	}
+	/*questions*/
+
+	.btn-choice{
+	width: 15rem;
+	height: 3rem;
+	font-size: 1.5rem !important;
+	margin: 5px;
+	position: relative;
+	left: 15%;
+	}
+
+	.question-page > h1{
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	/*result*/
+	.result-page{
+		flex-direction: column;
+
+	}
+	.bluepic, .redpic, .greenpic, .yellowpic, .orangepic, .purplepic{
+		display: none;
+	}
+
+	.your > h1{
+	font-size: 1.5rem;
+	}
+
+	.color-desc {
+	margin-right: 8px;
+	}
+}
+/*ipad*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+	#main-title{
+	
+	text-align: center; 
+	
+	}
+	.btn-choice{
+		width: 12rem;
+		height: 7rem;
+		font-size: 1.5rem !important;
+		margin: 5px;
+		}
+
+	.question-page > h1{
+		text-align: center;
+	}
+
+	.result-page{
+		flex-direction: column;
+	}
+
+	.bluepic, .redpic, .greenpic, .yellowpic, .orangepic, .purplepic, .color-desc {
+		width: 600px;
+	}
+
+	.color-desc > p {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}

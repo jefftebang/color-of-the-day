@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color of the Day</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<!-- bootswatch -->
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lumen/bootstrap.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<!-- LANDING PAGE -->
+
+	<div class="landing-page bg-info">
+		<h1 id="main-title" class="text-warning">Color of the Day</h1>
+		<h6 id="sub-text">What is your color for today?</h6>
+		<button class="btn btn-center btn-danger" type="button" id="btn-init">Take the Quiz!</button>
+		<img src="assets/images/branch.png" id="branch">
+		<img src="assets/images/poppy.png" id="poppy">
+	</div>
+
+	<!-- QUESTIONS PART, NAKA COPY PASTE LANG KASI PAULIT-ULIT LANG NAMAN, COMMENT OUT MUNA DI PA NAMAN SILA KAILANGAN -->
+	<div class="question-page d-none" id="question1">
+
+		<h1>What fruit are you craving to eat for today?</h1>
+		<div class="choice-first3 ">
+			<button class="btn btn-choice  btn-outline-success btn-set1">Citrus</button>
+			<button class="btn btn-choice  btn-outline-success btn-set1">Berries</button>
+			<button class="btn btn-choice  btn-outline-success btn-set1">Tropical</button>
+		</div>
+
+		<div class="choice-second3 ">
+			<button class="btn btn-choice  btn-outline-success btn-set1">Drupes</button>
+			<button class="btn btn-choice  btn-outline-success btn-set1">Melons</button>
+			<button class="btn btn-choice  btn-outline-success btn-set1">Apples</button>
+
+		</div>
+	</div>
+
+	<div class="question-page d-none" id="question2">
+
+		<h1>What genre of music would you like to listen to at this time?</h1>
+		<div class="choice-first3">
+			<button class="btn btn-choice btn-outline-primary btn-set2">Rock</button>
+			<button class="btn btn-choice btn-outline-primary btn-set2">Gospel</button>
+			<button class="btn btn-choice btn-outline-primary btn-set2">Jazz</button>
+		</div>
+
+		<div class="choice-second3">
+			<button class="btn btn-choice btn-outline-primary btn-set2">Classical</button>
+			<button class="btn btn-choice btn-outline-primary btn-set2">Heavy Metal</button>
+			<button class="btn btn-choice btn-outline-primary btn-set2">Pop</button>
+
+		</div>
+	</div>
+
+	<div class="question-page d-none" id="question3">
+
+		<h1>What cuisine are you craving for lunch?</h1>
+		<div class="choice-first3">
+			<button class="btn btn-choice btn-outline-warning btn-set3">Filipino</button>
+			<button class="btn btn-choice btn-outline-warning btn-set3">Chinese</button>
+			<button class="btn btn-choice btn-outline-warning btn-set3">Italian</button>
+		</div>
+
+		<div class="choice-second3">
+			<button class="btn btn-choice btn-outline-warning btn-set3">Mexican</button>
+			<button class="btn btn-choice btn-outline-warning btn-set3">Japanese</button>
+			<button class="btn btn-choice btn-outline-warning btn-set3">French</button>
+
+		</div>
+	</div>
+
+	<div class="question-page d-none" id="question4">
+
+		<h1>What movie would you love to watch today?</h1>
+		<div class="choice-first3">
+			<button class="btn btn-choice btn-outline-info btn-set4">Comedy</button>
+			<button class="btn btn-choice btn-outline-info btn-set4">Drama</button>
+			<button class="btn btn-choice btn-outline-info btn-set4">Romantic</button>
+		</div>
+
+		<div class="choice-second3">
+			<button class="btn btn-choice btn-outline-info btn-set4">Fictional/Sci-fi</button>
+			<button class="btn btn-choice btn-outline-info btn-set4">Action</button>
+			<button class="btn btn-choice btn-outline-info btn-set4">Horror</button>
+
+		</div>
+	</div>
+
+	<div class="question-page d-none" id="question5">
+
+		<h1>Where do you wish to go at this point?</h1>
+		<div class="choice-first3">
+			<button class="btn btn-choice btn-outline-danger btn-set5">Beach</button>
+			<button class="btn btn-choice btn-outline-danger btn-set5">Mountain</button>
+			<button class="btn btn-choice btn-outline-danger btn-set5">Forest</button>
+		</div>
+
+		<div class="choice-second3">
+			<button class="btn btn-choice btn-outline-danger btn-set5">Mall</button>
+			<button class="btn btn-choice btn-outline-danger btn-set5">Home</button>
+			<button class="btn btn-choice btn-outline-danger btn-set5">Church</button>
+
+		</div>
+	</div>
+
+	<!-- RESULT PAGE -->
+
+	<div class="end-page">
+	
+		<div class="result-page d-none">
+			<div class="your">
+			<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-pic">
+				<div class="bluepic"></div>
+
+			</div>
+
+			<div class="color-desc blue">
+				<h1>BLUE</h1><br>
+				<p>The color of the sky and the ocean, blue is one of the most popular colors. It causes the opposite reaction as red. The color of trust and induce calm and convey serenity and peace. People are more productive in blue rooms. Studies show weightlifters are able to handle heavier weights in blue gyms. It implies trust, responsibility, honesty, loyalty and inner security. It is used to reduce stress, create calmness, relax and create order.</p>
+			</div>
+		</div>
+
+		<div class="result-page d-none">
+			<div class="your">
+				<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-pic">
+				<div class="redpic"></div>
+			</div>
+			<div class="color-desc red">
+				<h1>RED</h1><br>
+				<p>The most emotionally intense color, red stimulates a faster heartbeat and breathing. It is also the color of love. Red clothing gets noticed and makes the wearer appear heavier. Since it is an extreme color, red clothing might not help people in negotiations or confrontations. Red cars are popular targets for thieves. In decorating, red is usually used as an accent. Decorators say that red furniture should be perfect since it will attract attention.</p>
+			</div>
+		</div>
+
+		<div class="result-page d-none">
+			<div class="your">
+				<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-pic">
+				<div class="greenpic"></div>
+			</div>
+			<div class="color-desc green">
+				<h1>GREEN</h1><br>
+				<p>The color of growth and health. Think of nature and see green in all its glory expressing renewal and life. Currently the most popular decorating color, green symbolizes nature. It is the easiest color on the eye and can improve vision. It is a calming, refreshing color. People waiting to appear on TV sit in "green rooms" to relax. Hospitals often use green because it relaxes patients. Brides in the Middle Ages wore green to symbolize fertility. Dark green is masculine, conservative, and implies wealth. It evokes feeling of abundance and a plentiful environment while providing a restful and secure feeling.</p>
+			</div>
+		</div>
+
+		<div class="result-page d-none">
+			<div class="your">
+				<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-color">
+				<div class="yellowpic"></div>
+			</div>
+			<div class="color-desc yellow">
+				<h1>YELLOW</h1><br>
+				<p>The color of optimism. Cheerful sunny yellow is an attention-getter. While it is considered an optimistic color, people lose their tempers more often in yellow rooms, and babies will cry more. It is the most difficult color for the eye to take in, so it can be overpowering if overused. Yellow enhances concentration, hence its use for legal pads. It also speeds metabolism. It stimulates the left side of the left-side of the brain, helping with clear thinking and quick decision making.</p>
+			</div>
+		</div>
+
+		<div class="result-page d-none">
+			<div class="your">
+				<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-color">
+				<div class="orangepic"></div>
+			</div>
+			<div class="color-desc orange">
+				<h1>ORANGE</h1><br>
+				<p>The color of encouragement. The combination of yellow and red makes orange convey excitement, warmth and enthusiasm, social and inviting. This is the color of the extrovert. Exuding happiness and joy, releasing inhibitions. Orange is a motivating and encouraging color that appeals to young people. Emotions that are associated with it are optimism, independence, being adventurous, creativity and fun.</p>
+			</div>
+		</div>
+
+		<div class="result-page d-none">
+			<div class="your">
+				<h1><strong>YOUR COLOR FOR THE DAY</strong></h1>
+			</div>
+			<div class="result-color">
+				<div class="purplepic"></div>
+			</div>
+			<div class="color-desc purple">
+				<h1>PURPLE</h1><br>
+				<p>The color of spirituality. The energy of red with the calm of blue combine to create purple, a color that inspires reflection and self awareness. It is the color of the sensitive, compassionate intuitive soul - the introvert. Also, purple has long been associated with royalty, and characteristics of quality and luxury. Emotions that are associated with it are imagination, spirituality, compassion, sensitivity and mystery. It\s used to encourage creativity, inspire, combine wisdom and impress luxury.</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+
+	
+</body>
+</html>
